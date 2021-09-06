@@ -1,10 +1,9 @@
 import './assets/styles/custom.scss';
 import './App.css';
+import Routes from 'Routes';
 
-function App() {
-  return (
-   <h1>Olá mundo!</h1>
-  );
-}
+const App = () => {
+  return <Routes />
+};
 
 export default App;

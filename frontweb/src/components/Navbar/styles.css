@@ -1,0 +1,39 @@
+.main-nav {
+	display: flex;
+	align-items: center;
+	height: 70px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.main-nav-logout {
+	flex: 1;
+	text-align: right;
+}
+
+.main-nav-btn-logout {
+	width: 100px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+	.main-nav {
+		padding-left: 23px;
+		padding-right: 23px;
+	}
+}
+
+@media (min-width: 768px) {
+	.main-nav {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-nav {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
