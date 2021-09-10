@@ -1,20 +1,23 @@
-import Navbar from "components/Navbar";
-import Auth from "pages/Auth";
-import { Route, Router, Switch } from "react-router-dom";
-import history from './util/history';
-
+import Login from 'pages/Auth/Login';
+import MovieCatalog from 'pages/MovieCatalog';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const Routes = () => {
-    return (
-      <Router history={history}>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact>
-            <Auth/>
-          </Route>
-        </Switch>
-      </Router>
-    );
-  }
-  
-  export default Routes;
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact>
+        <Login/>
+        </Route>
+        <Route path="/login">
+         <Login />
+        </Route>
+        <Route path="/movieCatalog">
+          <MovieCatalog />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  );
+};
+
+export default Routes;
