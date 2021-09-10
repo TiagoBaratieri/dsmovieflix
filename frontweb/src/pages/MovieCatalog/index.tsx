@@ -1,12 +1,12 @@
 import MovieCard from 'components/MovieCard';
 import Navbar from 'components/Navbar';
 import Pagination from 'components/Pagination';
+import MovieCardLoader from 'pages/Movie/components/loaders/MovieCardLoader';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Genre } from 'types/Genre';
 import { MoviesResponse } from 'types/Movie';
 import { makePrivateRequest } from 'util/request';
-import MovieCardLoader from './components/MovieCardLoader';
 import './styles.css';
 
 const MovieCatalog = () => {

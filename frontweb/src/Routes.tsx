@@ -1,4 +1,5 @@
 import Login from 'pages/Auth/Login';
+import Movie from 'pages/Movie';
 import MovieCatalog from 'pages/MovieCatalog';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -7,13 +8,16 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact>
-        <Login/>
+          <Login />
         </Route>
         <Route path="/login">
-         <Login />
+          <Login />
         </Route>
         <Route path="/movieCatalog">
           <MovieCatalog />
+        </Route>
+        <Route path="/movie/:movieId">
+          <Movie />
         </Route>
       </Switch>
     </BrowserRouter>
