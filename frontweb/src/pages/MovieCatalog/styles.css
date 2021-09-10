@@ -10,6 +10,9 @@ body {
   max-width: 1600px;
 }
 
+.movie-home-container {
+  justify-content: center;
+}
 .select-genre-container {
   width: 1126px;
   height: 70px;
@@ -43,4 +46,24 @@ body {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+}
+
+.movie-card-container {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 31px 35px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 44px;
+  margin-bottom: 70px;
+}
+
+.movie-loader {
+  margin-right: 2px;
 }
