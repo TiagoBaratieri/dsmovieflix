@@ -1,4 +1,5 @@
 import { useHistory } from "react-router-dom";
+import './styles.css';
 
 type Props = {
   text?: string;
@@ -13,7 +14,7 @@ const ButtonExit = ({ text }: Props) => {
   };
 
   return (
-    <button className="mr-5 btn-exit offset-9" onClick={onClickExit}>
+    <button className="button-exit offset-9" onClick={onClickExit}>
       {text}
     </button>
   );
