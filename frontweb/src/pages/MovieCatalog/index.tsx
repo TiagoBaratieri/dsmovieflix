@@ -1,5 +1,6 @@
 import MovieCard from 'components/MovieCard';
 import Navbar from 'components/Navbar';
+import Pagination from 'components/Pagination';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Genre } from 'types/Genre';
@@ -48,7 +49,7 @@ const MovieCatalog = () => {
 
   return (
     <div className="justify-content-center">
-        <Navbar visible={true} />
+      <Navbar visible={true} />
       <div className="select-genre-container">
         <form className="select-genre">
           <select
@@ -80,6 +81,15 @@ const MovieCatalog = () => {
                 </Link>
               ))}
             </>
+          )}
+        </div>
+        <div className="pagination-container">
+          {moviesReponse && (
+            <Pagination
+              totalPages={moviesReponse.totalPages}
+              activePage={activePage}
+              onChange={(page) => setActivePage(page)}
+            />
           )}
         </div>
       </div>
