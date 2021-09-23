@@ -60,7 +60,7 @@ Pré-requisitos: npm / yarn
 git clone https://github.com/TiagoBaratieri/dsmovieflix.git
 
 # entrar na pasta do projeto front end
-cd frontend
+cd frontweb
 
 # instalar dependências
 yarn install
