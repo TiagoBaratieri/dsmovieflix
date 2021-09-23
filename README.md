@@ -1,8 +1,8 @@
 
 <div align="center">
-  <img src="https://github.com/Lukinhasssss/assets/blob/main/movieflix/criar-conta.png" width="600" />
-  <img src="https://github.com/Lukinhasssss/assets/blob/main/movieflix/list-movies.png" width="600" />
-  <img src="https://github.com/Lukinhasssss/assets/blob/main/movieflix/movie-details.png" width="600" />
+  <img src="https://github.com/TiagoBaratieri/images/blob/main/image-login.png" width="600" />
+  <img src="https://github.com/TiagoBaratieri/images/blob/main/image-movie-card.png" width="600" />
+  <img src="https://github.com/TiagoBaratieri/images/blob/main/image-movie.png" width="600" />
 </div>
 
 # Sobre o Projeto
