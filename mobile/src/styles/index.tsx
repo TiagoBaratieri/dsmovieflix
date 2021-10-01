@@ -22,6 +22,23 @@ const text = StyleSheet.create({
     fontSize: 20,
     textTransform: "uppercase",
   },
+
+  loginErrorText: {
+    color: colors.primary,
+    fontSize: 20,
+},
+
+  navText: {
+    fontSize: 25,
+    fontWeight: "bold",
+    color: colors.black,
+    marginLeft: 20,
+  },
+
+  navLogoutText: {
+    fontWeight: "bold",
+    fontSize: 14,
+},
 });
 
 const theme = StyleSheet.create({
@@ -66,6 +83,17 @@ const theme = StyleSheet.create({
     alignItems: "center",
     marginTop: 45,
   },
+
+  navBtnLogout: {
+    width: 100,
+    height: 30,
+    borderWidth: 1,
+    borderColor: colors.black,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+    marginRight: 10,
+},
 });
 
 export { colors, text, theme };
