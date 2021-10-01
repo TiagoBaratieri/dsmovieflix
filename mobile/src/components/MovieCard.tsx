@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import {
   Image,
@@ -7,34 +8,25 @@ import {
   View,
 } from "react-native";
 import { text, theme } from "../styles";
+import { Movie } from "../types/Movie";
 
-interface MovieProps {
-  id: number;
-  title: string;
-  subTitle: string;
-  year: number;
-  imgUrl: ImageSourcePropType;
-  synopsis: string;
-  genre: {};
-  reviews?: [];
-}
+type Props = {
+  movie: Movie;
+};
 
-const MovieCard: React.FC<MovieProps> = ({
-  id,
-  title,
-  subTitle,
-  year,
-  imgUrl,
-  synopsis,
-  genre,
-}) => {
+const MovieCard: React.FC<Props> = ({ movie }) => {
+  const navigation = useNavigation();
+  const { id } = movie;
   return (
-    <TouchableOpacity style={theme.movieCard}>
-      <Image source={imgUrl} style={theme.movieImage} />
+    <TouchableOpacity
+      style={theme.movieCard}
+
+    >
+      <Image source={{ uri: movie.imgUrl }} style={theme.movieImage} />
       <View style={theme.movieDescriptionContainer}>
-        <Text style={text.movieTitle}>{title}</Text>
-        <Text style={text.movieSubtitle}>{subTitle}</Text>
-        <Text style={text.movieYear}>{year}</Text>
+        <Text style={text.movieTitle}>{movie.title}</Text>
+        <Text style={text.movieSubtitle}>{movie.subtitle}</Text>
+        <Text style={text.movieYear}>{movie.year}</Text>
       </View>
     </TouchableOpacity>
   );

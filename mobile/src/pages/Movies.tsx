@@ -1,53 +1,37 @@
-import React from "react";
-import { ScrollView, Text, View } from "react-native";
+import React, { useCallback, useEffect, useState } from "react";
+import { ScrollView } from "react-native";
 import MovieCard from "../components/MovieCard";
+import { getMovies } from "../services";
 import { theme } from "../styles";
-
-const movies = [{
-  id: 0,
-  title: "Teste Título",
-  subTitle: "Teste Subtítulo",
-  year: 2021,
-  imgUrl: "https://www.themoviedb.org/t/p/original/3OwaKVZf3A2NdnarqKbwzFEhKir.jpg",
-  synopsis: "TESTE DESCRIÇÃO",
-  genre: { name: "Comédia" },
-},
-{
-  id: 1,
-  title: "Teste 2 Título",
-  subTitle: "Teste 2 Subtítulo",
-  year: 2021,
-  imgUrl: "https://www.themoviedb.org/t/p/original/3OwaKVZf3A2NdnarqKbwzFEhKir.jpg",
-  synopsis: "TESTE 2 DESCRIÇÃO",
-  genre: { name: "Comédia" },
-},
-{
-  id: 2,
-  title: "Teste 3 Título",
-  subTitle: "Teste 3 Subtítulo",
-  year: 2021,
-  imgUrl: "https://www.themoviedb.org/t/p/original/3OwaKVZf3A2NdnarqKbwzFEhKir.jpg",
-  synopsis: "TESTE 3 DESCRIÇÃO",
-  genre: { name: "Comédia" },
-},
-{
-  id: 3,
-  title: "Teste 2 Título",
-  subTitle: "Teste 2 Subtítulo",
-  year: 2021,
-  imgUrl: "https://www.themoviedb.org/t/p/original/3OwaKVZf3A2NdnarqKbwzFEhKir.jpg",
-  synopsis: "TESTE 2 DESCRIÇÃO",
-  genre: { name: "Comédia" },
-}];
+import { Genre, MoviesResponse } from "../types/Movie";
 
 const Movies: React.FC = () => {
+  const [moviesResponse, setMoviesResponse] = useState<MoviesResponse>();
+  const [activePage, setActivePage] = useState(0);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [genre, setGenre] = useState<Genre>();
+
+  const fillMovies = useCallback(() => {
+    const params = {
+      page: 0,
+    };
+
+    setIsLoading(true);
+    getMovies(params)
+      .then((response) => setMoviesResponse(response.data))
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, []);
   return (
     <ScrollView contentContainerStyle={theme.scrollContainer}>
-    {movies.map((movie) => (
-        <MovieCard {...movie} key={movie.id} />
-    ))}
-</ScrollView>
+      {moviesResponse?.content.map((movie) => (
+        <MovieCard movie={movie} key={movie.id} />
+      ))}
+    </ScrollView>
   );
 };
 
 export default Movies;
+
+

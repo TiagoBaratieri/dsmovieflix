@@ -117,6 +117,15 @@ scrollContainer: {
   padding: 10,
 },
 
+loginErrorText: {
+  color: colors.primary,
+  fontSize: 20,
+},
+
+loginError: {
+  marginBottom: 20,
+},
+
 movieCard: {
   width: "100%",
   backgroundColor: colors.mediumGray,
