@@ -39,6 +39,23 @@ const text = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 14,
 },
+
+movieTitle: {
+  fontSize: 20,
+  fontWeight: "bold",
+  color: colors.white,
+},
+movieSubtitle: {
+  fontSize: 14,
+  color: colors.white,
+  marginTop: 5,
+},
+movieYear: {
+  fontSize: 16,
+  fontWeight: "bold",
+  color: colors.primary,
+  marginTop: 5,
+}
 });
 
 const theme = StyleSheet.create({
@@ -94,6 +111,36 @@ const theme = StyleSheet.create({
     justifyContent: "center",
     marginRight: 10,
 },
+
+scrollContainer: {
+  backgroundColor: colors.darkGray,
+  padding: 10,
+},
+
+movieCard: {
+  width: "100%",
+  backgroundColor: colors.mediumGray,
+  borderRadius: 5,
+  shadowColor: colors.black,
+  shadowOffset: {
+      width: 0,
+      height: 2,
+  },
+  shadowOpacity: 0.25,
+  shadowRadius: 3.84,
+  paddingVertical: 25,
+  marginTop: 20,
+},
+movieImage: {
+  width: "100%",
+  height: 170,
+},
+movieDescriptionContainer: {
+  paddingTop: 10,
+  paddingBottom: 20,
+  paddingHorizontal: 15,
+},
+
 });
 
 export { colors, text, theme };
