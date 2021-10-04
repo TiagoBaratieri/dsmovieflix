@@ -46,6 +46,35 @@ const text = StyleSheet.create({
     textTransform: "uppercase",
     color: colors.white,
   },
+
+  //login
+  LoginTitle: {
+    fontSize: 30,
+    letterSpacing: -0.015,
+    color: colors.white,
+    paddingTop: 50,
+    paddingBottom: 40,
+  },
+
+input: {
+    width: "100%",
+    maxWidth: 290,
+    maxHeight: 10,
+    backgroundColor: colors.whiteBackground,
+    borderWidth: 1,
+    borderColor: colors.whiteBorder,
+    borderRadius: 10,
+    padding: 30,
+    marginBottom: 50,
+  },
+
+  buttonLoginText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginLeft: 50,
+    textTransform: "uppercase",
+    color: colors.black
+  }
 });
 
 const theme = StyleSheet.create({
@@ -60,7 +89,7 @@ const theme = StyleSheet.create({
   card: {
     width: "100%",
     height: "100%",
-    backgroundColor: colors.lightGray,
+    backgroundColor: colors.mediumGray,
     borderRadius: 20,
     shadowColor: colors.black,
     shadowOffset: {
@@ -85,7 +114,7 @@ const theme = StyleSheet.create({
     backgroundColor: colors.yellow,
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center"
+    alignItems: "center",
   },
 
   eyesContainer: {
@@ -94,7 +123,33 @@ const theme = StyleSheet.create({
     backgroundColor: colors.darkGray,
     borderTopRightRadius: 10,
     borderBottomRightRadius: 10,
+  },
 
+  //Login
+
+  loginContainer: {
+    flexGrow: 1,
+    width: "100%",
+    backgroundColor: colors.lightGray,
+    paddingVertical: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 40,
+  },
+
+  cardLogin: {
+    width: "110%",
+    height: "100%",
+    backgroundColor: colors.mediumGray,
+    borderRadius: 20,
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    alignItems: "center",
   },
 
 });
