@@ -47,7 +47,16 @@ const text = StyleSheet.create({
     color: colors.white,
   },
 
+  primaryText: {
+    fontSize: 14,
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    color: colors.black,
+    marginLeft: 20,
+  },
+
   //login
+  
   LoginTitle: {
     fontSize: 30,
     letterSpacing: -0.015,
@@ -56,16 +65,27 @@ const text = StyleSheet.create({
     paddingBottom: 40,
   },
 
-input: {
-    width: "100%",
-    maxWidth: 290,
-    maxHeight: 10,
-    backgroundColor: colors.whiteBackground,
-    borderWidth: 1,
-    borderColor: colors.whiteBorder,
-    borderRadius: 10,
-    padding: 30,
-    marginBottom: 50,
+  //MovieCard
+
+  cardTitle: {
+    fontSize: 18,
+    letterSpacing: -0.015,
+    color: colors.white,
+  },
+
+  cardYear: {
+    fontSize: 14,
+    lineHeight: 19,
+    letterSpacing: -0.015,
+    color: colors.yellow,
+  },
+
+  cardSubTitle: {
+    fontSize: 16,
+    lineHeight: 22,
+    letterSpacing: -0.015,
+    color: colors.subtitleLight,
+    marginVertical: 10,
   },
 
   buttonLoginText: {
@@ -73,8 +93,8 @@ input: {
     fontWeight: "bold",
     marginLeft: 50,
     textTransform: "uppercase",
-    color: colors.black
-  }
+    color: colors.black,
+  },
 });
 
 const theme = StyleSheet.create({
@@ -91,6 +111,7 @@ const theme = StyleSheet.create({
     height: "100%",
     backgroundColor: colors.mediumGray,
     borderRadius: 20,
+    paddingBottom: 20,
     shadowColor: colors.black,
     shadowOffset: {
       width: 0,
@@ -107,6 +128,16 @@ const theme = StyleSheet.create({
     height: 225,
   },
 
+  arrowContainer: {
+    width: 50,
+    height: 50,
+    backgroundColor: colors.mediumGray,
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
   primaryButton: {
     width: 290,
     height: 50,
@@ -115,14 +146,6 @@ const theme = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-  },
-
-  eyesContainer: {
-    width: 50,
-    height: 50,
-    backgroundColor: colors.darkGray,
-    borderTopRightRadius: 10,
-    borderBottomRightRadius: 10,
   },
 
   //Login
@@ -136,11 +159,10 @@ const theme = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 40,
   },
-
-  cardLogin: {
-    width: "110%",
+  loginCard: {
+    width: "115%",
     height: "100%",
-    backgroundColor: colors.mediumGray,
+    backgroundColor: colors.darkGray,
     borderRadius: 20,
     shadowColor: colors.black,
     shadowOffset: {
@@ -150,8 +172,91 @@ const theme = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     alignItems: "center",
+    justifyContent: "center",
+  },
+  form: {
+    marginVertical: 10,
+  },
+  passwordGroup: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 25,
+  },
+  textInput: {
+    width: 290,
+    height: 50,
+    borderWidth: 1,
+    borderColor: colors.mediumGray,
+    borderRadius: 10,
+    padding: 10,
+  },
+  toggle: {
+    marginLeft: -50,
   },
 
+  buttonTextContainer: {
+    flex: 1,
+    alignItems: "center",
+  },
+
+  //MovieCard
+
+  cardMovie: {
+    width: "100%",
+    height: 370,
+    backgroundColor: colors.lightGray,
+    borderRadius: 10,
+    marginBottom: 20,
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+
+  cardDescription: {
+    paddingVertical: 20,
+    paddingHorizontal: 15,
+    flex: 1,
+    height: "100%",
+  },
+
+  movieImage: {
+    width: "100%",
+    height: 220,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    resizeMode: "cover",
+  },
+
+  //catalog
+
+  scrollContainer: {
+    flexGrow: 1,
+    width: "100%",
+    backgroundColor: colors.darkGray,
+    padding: 10,
+  },
+
+  //Search
+
+  inputContainer: {
+    width: "100%",
+    height: 80,
+    backgroundColor: colors.mediumGray,
+    padding: 12,
+    borderRadius: 10,
+    marginBottom: 20,
+  },
+
+  SearchContainer: {
+    width: "90%",
+    height: 40,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.placeholder,
+  },
 });
 
 export { colors, theme, text };

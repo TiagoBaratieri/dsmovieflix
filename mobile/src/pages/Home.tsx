@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { theme, text } from "../styles";
 import MainImage from "../assets/main-image.png";
-import Eyes from "../assets/eyes-opened.png";
+import arrow from "../assets/arrow.png";
 
 const Login: React.FC = () => {
 
@@ -24,10 +24,10 @@ const Login: React.FC = () => {
          onPress={() => navigation.navigate("Login")}
          >
         <Text style={text.buttonText}>
-        Fazer Login
+        Catálogo Filmes
         </Text>
-        <View style={theme.eyesContainer}>
-          <Image source={Eyes} />
+        <View style={theme.arrowContainer}>
+          <Image source={arrow} style={{ width: 15, height: 15 }} />
         </View>
       </TouchableOpacity>
       </View>

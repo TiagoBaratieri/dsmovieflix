@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator} from "@react-navigation/stack";
-import { Home, Catalog, Login } from "../pages";
+import { Home, Login, Catalog } from "../pages";
 
 const Stack= createStackNavigator();
 
