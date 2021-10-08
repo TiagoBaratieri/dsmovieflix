@@ -4,11 +4,10 @@ import { View, Text } from "react-native";
 const Catalog: React.FC = () => {
     return(
        <View>
-           <Text>
-             Catálogo de filmes
-           </Text>
+           <Text>Catálogo de filmes</Text>
        </View>
     )
+
 }
 
-export default Catalog;
+export default Catalog
