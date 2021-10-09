@@ -1,52 +1,37 @@
-import React from "react";
-import { View, Text, ScrollView } from "react-native";
-import movieTest from '../assets/movie-test.png';
+import React, { useCallback, useEffect, useState } from "react";
+import { ScrollView } from "react-native";
 import MovieCard from "../components/MovieCard";
+import { getProducts } from "../services";
 import { theme } from "../styles";
+import { Genre, MoviesResponse } from "../types/Movie";
 
 const Catalog: React.FC = () => {
-  const movies = [
-    {
-      id: 0,
-      title: "Teste Título",
-      subTitle: "Teste Subtítulo",
-      year: 2021,
-      imgUrl: movieTest,
-      synopsis: "TESTE DESCRIÇÃO",
-      genre: { name: "Comédia" },
-    },
-    {
-      id: 1,
-      title: "Teste 2 Título",
-      subTitle: "Teste 2 Subtítulo",
-      year: 2021,
-      imgUrl: movieTest,
-      synopsis: "TESTE 2 DESCRIÇÃO",
-      genre: { name: "Comédia" },
-    },
-    {
-      id: 2,
-      title: "Teste 3 Título",
-      subTitle: "Teste 3 Subtítulo",
-      year: 2021,
-      imgUrl: movieTest,
-      synopsis: "TESTE 3 DESCRIÇÃO",
-      genre: { name: "Comédia" },
-    },
-    {
-      id: 3,
-      title: "Teste 2 Título",
-      subTitle: "Teste 2 Subtítulo",
-      year: 2021,
-      imgUrl: movieTest,
-      synopsis: "TESTE 2 DESCRIÇÃO",
-      genre: { name: "Comédia" },
-    },
-  ];
+  const [moviesResponse, setMoviesResponse] = useState<MoviesResponse>();
+  const [activePage, setActivePage] = useState(0);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [genre, setGenre] = useState<Genre>();
+
+  const fillMovies = useCallback(() => {
+    const params = {
+      page: 0,
+    };
+
+    setIsLoading(true);
+    getProducts(params)
+      .then((response) => setMoviesResponse(response.data))
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    fillMovies();
+  }, [fillMovies]);
+
   return (
     <ScrollView contentContainerStyle={theme.scrollContainer}>
-      {movies.map((movie) => (
-        <MovieCard {...movie} key={movie.id} />
+      {moviesResponse?.content.map((movie) => (
+        <MovieCard movie={movie} key={movie.id} />
       ))}
     </ScrollView>
   );

@@ -2,7 +2,7 @@ import { api } from "./index";
 import queryString from 'query-string';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const TOKEN = "Basic bW92aWVmbGl4Ym9vdGNhbXA6bW92aWVmbGl4MTkxMDE5ODg=";
+const TOKEN = "Basic bW92aWVmbGl4Om1vdmllZmxpeDEyMw==";
 
 interface AuthProps {
     username: string,

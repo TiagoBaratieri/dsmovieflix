@@ -25,9 +25,10 @@ const Login: React.FC = () => {
         setUserFetchData(userInfo);
         navigation.navigate("Catalog");
       })
-      .catch(() => {
+      .catch((e) => {
         navigation.navigate("Login");
         setHasError(true);
+        console.log(e);
       });
   }
 
