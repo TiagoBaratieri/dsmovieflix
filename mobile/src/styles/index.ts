@@ -64,6 +64,25 @@ navLogoutText: {
   fontSize: 14,
 },
 
+//MovieCard
+
+movieTitle: {
+  fontSize: 20,
+  fontWeight: "bold",
+  color: colors.white,
+},
+movieSubtitle: {
+  fontSize: 14,
+  color: colors.white,
+  marginTop: 5,
+},
+movieYear: {
+  fontSize: 16,
+  fontWeight: "bold",
+  color: colors.primary,
+  marginTop: 5,
+},
+
   //Login
 
   loginTitle: {
@@ -84,6 +103,7 @@ buttonText: {
     letterSpacing: -0.015,
     marginLeft: 40,
 },
+
  
 });
 
@@ -215,6 +235,39 @@ LoginButton: {
   alignItems: "center",
   justifyContent: "center",
   marginRight: 10,
+},
+
+ //Movie Card
+ movieCard: {
+  width: "100%",
+  backgroundColor: colors.mediumGray,
+  borderRadius: 5,
+  shadowColor: colors.black,
+  shadowOffset: {
+      width: 0,
+      height: 2,
+  },
+  shadowOpacity: 0.25,
+  shadowRadius: 3.84,
+  paddingVertical: 25,
+  marginTop: 20,
+},
+movieImage: {
+  width: "100%",
+  height: 170,
+},
+
+movieDescriptionContainer: {
+  paddingTop: 10,
+  paddingBottom: 20,
+  paddingHorizontal: 15,
+},
+
+//Catalog
+
+scrollContainer: {
+  backgroundColor: colors.darkGray,
+  padding: 10,
 },
 
 
