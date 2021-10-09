@@ -109,6 +109,27 @@ loginErrorText: {
   fontSize: 20,
 },
 
+//MovieDetails
+
+formButtonText: {
+  fontSize: 16,
+  fontWeight: "bold",
+},
+
+detailsDescription: {
+  fontSize: 16,
+  color: colors.lightGray,
+},
+
+reviewName: {
+  fontSize: 16,
+  fontWeight: "bold",
+  color: colors.white,
+},
+reviewText: {
+  fontSize: 16,
+  color: colors.lightGray,
+}
  
 });
 
@@ -297,6 +318,102 @@ paginationItem: {
   justifyContent: "center",
   marginRight: 10,
 },
+
+//Details page
+detailsContainer: {
+  backgroundColor: colors.darkGray,
+},
+detailsCard: {
+  backgroundColor: colors.mediumGray,
+  borderRadius: 10,
+  padding: 20,
+  marginVertical: 20,
+  marginHorizontal: 10,
+  shadowColor: colors.black,
+  shadowOffset: {
+      width: 0,
+      height: 2,
+  },
+  shadowOpacity: 0.5,
+  shadowRadius: 3.84,
+},
+detailsImage: {
+  width: "100%",
+  height: 170,
+},
+detailsContent: {
+  marginTop: 15,
+},
+descriptionContainer: {
+  borderRadius: 10,
+  borderColor: colors.white,
+  borderWidth: 1,
+  padding: 10,
+  marginTop: 15,
+},
+formContainer: {
+  backgroundColor: colors.mediumGray,
+  borderRadius: 10,
+  padding: 20,
+  shadowColor: colors.black,
+  shadowOffset: {
+      width: 0,
+      height: 2,
+  },
+  shadowOpacity: 0.5,
+  shadowRadius: 3.84,
+  marginBottom: 20,
+  marginHorizontal: 10,
+},
+formInput: {
+  width: "100%",
+  height: 50,
+  borderWidth: 1,
+  borderColor: colors.mediumGray,
+  borderRadius: 5,
+  backgroundColor: colors.white,
+  marginBottom: 20,
+},
+formButton: {
+  backgroundColor: colors.primary,
+  width: "100%",
+  height: 50,
+  borderRadius: 5,
+  justifyContent: "center",
+  alignItems: "center",
+},
+reviewsContainer: {
+  backgroundColor: colors.mediumGray,
+  borderRadius: 10,
+  padding: 20,
+  shadowColor: colors.black,
+  shadowOffset: {
+      width: 0,
+      height: 2,
+  },
+  shadowOpacity: 0.5,
+  shadowRadius: 3.84,
+  marginBottom: 20,
+  marginHorizontal: 10,
+},
+reviewContainer: {
+  marginBottom: 15,
+},
+reviewNameContainer: {
+  flexDirection: "row",
+  alignItems: "center",
+},
+reviewImage: {
+  marginRight: 15,
+},
+reviewContent: {
+  borderRadius: 10,
+  borderColor: colors.white,
+  borderWidth: 1,
+  padding: 10,
+  marginTop: 10,
+},
+
 
 });
 
