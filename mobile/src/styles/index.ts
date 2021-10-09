@@ -278,6 +278,25 @@ scrollContainer: {
   padding: 10,
 },
 
+ //Pagination
+ paginationContainer: {
+  margin: 25,
+},
+paginationCoreContainer: {
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center",
+  width: "100%",
+},
+paginationItem: {
+  width: 40,
+  height: 40,
+  backgroundColor: colors.mediumGray,
+  borderRadius: 50,
+  alignItems: "center",
+  justifyContent: "center",
+  marginRight: 10,
+},
 
 });
 

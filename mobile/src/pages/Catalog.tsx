@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { ActivityIndicator, ScrollView } from "react-native";
+import { ActivityIndicator, ScrollView, View } from "react-native";
 import MovieCard from "../components/MovieCard";
+import Pagination from "../components/Pagination";
 import { getProducts } from "../services";
 import { colors, theme } from "../styles";
 import { Genre, MoviesResponse } from "../types/Movie";
@@ -13,7 +14,7 @@ const Catalog: React.FC = () => {
 
   const fillMovies = useCallback(() => {
     const params = {
-      page: 0,
+      page: activePage,
     };
 
     setIsLoading(true);
@@ -22,7 +23,7 @@ const Catalog: React.FC = () => {
       .finally(() => {
         setIsLoading(false);
       });
-  }, []);
+  }, [activePage]);
 
   useEffect(() => {
     fillMovies();
@@ -30,11 +31,23 @@ const Catalog: React.FC = () => {
 
   return (
     <ScrollView contentContainerStyle={theme.scrollContainer}>
-          {isLoading ? (<ActivityIndicator size="large" color={colors.primary} />) :
-                (moviesResponse?.content.map((movie) => (
-                    <MovieCard movie={movie} key={movie.id} />
-                )))
-            }
+      {isLoading ? (
+        <ActivityIndicator size="large" color={colors.primary} />
+      ) : (
+        moviesResponse?.content.map((movie) => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))
+      )}
+
+      {moviesResponse && (
+        <View style={theme.paginationContainer}>
+          <Pagination
+            totalPages={moviesResponse.totalPages}
+            activePage={activePage}
+            onChange={(page) => setActivePage(page)}
+          />
+        </View>
+      )}
     </ScrollView>
   );
 };
