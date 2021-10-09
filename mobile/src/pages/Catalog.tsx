@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { ScrollView } from "react-native";
+import { ActivityIndicator, ScrollView } from "react-native";
 import MovieCard from "../components/MovieCard";
 import { getProducts } from "../services";
-import { theme } from "../styles";
+import { colors, theme } from "../styles";
 import { Genre, MoviesResponse } from "../types/Movie";
 
 const Catalog: React.FC = () => {
@@ -30,9 +30,11 @@ const Catalog: React.FC = () => {
 
   return (
     <ScrollView contentContainerStyle={theme.scrollContainer}>
-      {moviesResponse?.content.map((movie) => (
-        <MovieCard movie={movie} key={movie.id} />
-      ))}
+          {isLoading ? (<ActivityIndicator size="large" color={colors.primary} />) :
+                (moviesResponse?.content.map((movie) => (
+                    <MovieCard movie={movie} key={movie.id} />
+                )))
+            }
     </ScrollView>
   );
 };
