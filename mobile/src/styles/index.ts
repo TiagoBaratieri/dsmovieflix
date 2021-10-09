@@ -50,6 +50,20 @@ const text = StyleSheet.create({
     marginLeft: 40,
   },
 
+  //Navbar
+
+  navText: {
+    fontSize: 25,
+    fontWeight: "bold",
+    color: colors.black,
+    marginLeft: 20,
+},
+
+navLogoutText: {
+  fontWeight: "bold",
+  fontSize: 14,
+},
+
   //Login
 
   loginTitle: {
@@ -70,7 +84,6 @@ buttonText: {
     letterSpacing: -0.015,
     marginLeft: 40,
 },
-
  
 });
 
@@ -165,6 +178,21 @@ textInput: {
   paddingLeft: 20
 },
 
+form: {
+  marginVertical: 10,
+},
+
+passwordGroup: {
+  flexDirection: "row",
+  alignItems: "center",
+  marginVertical: 25,
+},
+
+toggle: {
+  marginLeft: -40,
+  marginTop: -15
+},
+
 LoginButton: {
   width: 290,
   height: 50,
@@ -175,6 +203,18 @@ LoginButton: {
   alignItems: "center",
   marginTop: 40
   
+},
+
+ // Navbar
+ navBtnLogout: {
+  width: 100,
+  height: 30,
+  borderWidth: 1,
+  borderColor: colors.black,
+  borderRadius: 10,
+  alignItems: "center",
+  justifyContent: "center",
+  marginRight: 10,
 },
 
 
