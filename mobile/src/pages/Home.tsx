@@ -12,8 +12,8 @@ const Home: React.FC = () => {
     <View style={theme.container}>
       <View style={theme.card}>
         <View style={theme.textContainer}>
-          <Text style={text.bold}>Avalie filmes</Text>
-          <Text style={text.regular}>
+          <Text style={text.homeTitle}>Avalie filmes</Text>
+          <Text style={text.homeSubTitle}>
             Diga o que você achou do seu filme favorito.
           </Text>
         </View>

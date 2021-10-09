@@ -9,14 +9,14 @@ const Stack = createNativeStackNavigator();
 const Routes: React.FC = () => {
   return (
     <Stack.Navigator
-      screenOptions={{
-        headerTitle: " ",
-        headerStyle: {
-          backgroundColor: colors.primary,
-        },
-        headerLeft: () => <HeaderText />,
-        headerRight: () => <NavBar />,
-      }}
+        screenOptions={{
+          headerTitle: " ",
+          headerStyle: {
+            backgroundColor: colors.primary, 
+          },
+          headerLeft: () => <HeaderText />,
+          headerRight: () => <NavBar />,
+        }}
     >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Login" component={Login} />

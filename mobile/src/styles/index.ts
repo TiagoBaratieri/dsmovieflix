@@ -1,24 +1,17 @@
 import { StyleSheet, Dimensions } from "react-native";
 
 const colors = {
-  white: "#fff",
-  lightestGray: "#fefefe",
-  lightGray: "#f2f2f2",
-  borderGray: "#e1e1e1",
-  lighterGray: "#cdcdcd",
-  lighterMediumGray: "#9e9e9e",
-  lightMediumGray: "#6c6c6c",
-  mediumGray: "#525252",
-  darkGray: "#263238",
-  black: "#000",
   primary: "#FFC700",
+  darkGray: "#525252",
+  mediumGray: "#6C6C6C",
+  lightGray: "#9E9E9E",
   secondary: "rgba(38, 50, 56, 0.5)",
-  bluePill: "#407bff61",
-  red: "#df5753",
+  black: "#000",
+  white: "#fff",
 };
 
 const text = StyleSheet.create({
-  bold: {
+  homeTitle: {
     fontSize: 26,
     fontWeight: "bold",
     textAlign: "center",
@@ -28,7 +21,7 @@ const text = StyleSheet.create({
     letterSpacing: -0.015,
   },
 
-  regular: {
+  homeSubTitle: {
     width: 240,
     fontSize: 16,
     fontWeight: "400",
@@ -57,31 +50,31 @@ const text = StyleSheet.create({
     fontWeight: "bold",
     color: colors.black,
     marginLeft: 20,
-},
+  },
 
-navLogoutText: {
-  fontWeight: "bold",
-  fontSize: 14,
-},
+  navLogoutText: {
+    fontWeight: "bold",
+    fontSize: 14,
+  },
 
-//MovieCard
+  //MovieCard
 
-movieTitle: {
-  fontSize: 20,
-  fontWeight: "bold",
-  color: colors.white,
-},
-movieSubtitle: {
-  fontSize: 14,
-  color: colors.white,
-  marginTop: 5,
-},
-movieYear: {
-  fontSize: 16,
-  fontWeight: "bold",
-  color: colors.primary,
-  marginTop: 5,
-},
+  movieTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: colors.white,
+  },
+  movieSubtitle: {
+    fontSize: 14,
+    color: colors.white,
+    marginTop: 5,
+  },
+  movieYear: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: colors.primary,
+    marginTop: 5,
+  },
 
   //Login
 
@@ -91,10 +84,10 @@ movieYear: {
     textTransform: "uppercase",
     color: colors.white,
     marginBottom: 50,
-},
+  },
 
-buttonText: {
-  fontSize: 16,
+  buttonText: {
+    fontSize: 16,
     fontWeight: "bold",
     lineHeight: 22,
     textAlign: "center",
@@ -102,42 +95,41 @@ buttonText: {
     textTransform: "uppercase",
     letterSpacing: -0.015,
     marginLeft: 40,
-},
+  },
 
-loginErrorText: {
-  color: colors.primary,
-  fontSize: 20,
-},
+  loginErrorText: {
+    color: colors.primary,
+    fontSize: 20,
+  },
 
-//MovieDetails
+  //MovieDetails
 
-formButtonText: {
-  fontSize: 16,
-  fontWeight: "bold",
-},
+  formButtonText: {
+    fontSize: 16,
+    fontWeight: "bold",
+  },
 
-detailsDescription: {
-  fontSize: 16,
-  color: colors.lightGray,
-},
+  detailsDescription: {
+    fontSize: 16,
+    color: colors.lightGray,
+  },
 
-reviewName: {
-  fontSize: 16,
-  fontWeight: "bold",
-  color: colors.white,
-},
-reviewText: {
-  fontSize: 16,
-  color: colors.lightGray,
-}
- 
+  reviewName: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: colors.white,
+  },
+  reviewText: {
+    fontSize: 16,
+    color: colors.lightGray,
+  },
 });
 
 const theme = StyleSheet.create({
   container: {
     flexGrow: 1,
     height: "100%",
-    backgroundColor: colors.lighterGray,
+    backgroundColor: colors.darkGray,
     paddingHorizontal: 20,
     paddingTop: 20,
   },
@@ -149,7 +141,7 @@ const theme = StyleSheet.create({
     borderRadius: 20,
     alignItems: "center",
     justifyContent: "space-around",
-    shadowColor: colors. lighterMediumGray,
+    shadowColor: colors.darkGray,
     shadowOffset: {
       width: 0,
       height: 2,
@@ -187,232 +179,233 @@ const theme = StyleSheet.create({
     justifyContent: "center",
   },
 
- //Login
+  //Login
 
- containerLogin: {
-  flexGrow: 1,
-  height: "100%",
-  backgroundColor: colors.lightMediumGray,
-  paddingHorizontal: 20,
-  paddingTop: 20,
-},
+  containerLogin: {
+    flexGrow: 1,
+    height: "100%",
+    backgroundColor: colors.lightGray,
+    paddingHorizontal: 20,
+    paddingTop: 20,
+  },
 
- loginCard: {
-  width: "100%",
-  height: "95%",
-  backgroundColor: colors.mediumGray,
-  borderRadius: 5,
-  shadowColor: colors.black,
-  shadowOffset: {
+  loginCard: {
+    width: "100%",
+    height: "95%",
+    backgroundColor: colors.mediumGray,
+    borderRadius: 5,
+    shadowColor: colors.black,
+    shadowOffset: {
       width: 0,
       height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    justifyContent: "center",
+    alignItems: "center",
   },
-  shadowOpacity: 0.25,
-  shadowRadius: 3.84,
-  justifyContent: "center",
-  alignItems: "center",
-},
 
-textInput: {
-  width: 300,
-  height: 50,
-  borderWidth: 1,
-  borderColor: colors.mediumGray,
-  borderRadius: 5,
-  backgroundColor: colors.white,
-  marginBottom: 20,
-  paddingLeft: 20
-},
+  textInput: {
+    width: 300,
+    height: 50,
+    borderWidth: 1,
+    borderColor: colors.mediumGray,
+    borderRadius: 5,
+    backgroundColor: colors.white,
+    marginBottom: 20,
+    paddingLeft: 20,
+  },
 
-form: {
-  marginVertical: 10,
-},
+  form: {
+    marginVertical: 10,
+  },
 
-passwordGroup: {
-  flexDirection: "row",
-  alignItems: "center",
-  marginVertical: 25,
-},
+  passwordGroup: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 25,
+  },
 
-toggle: {
-  marginLeft: -40,
-  marginTop: -15
-},
+  toggle: {
+    marginLeft: -40,
+    marginTop: -15,
+  },
 
-LoginButton: {
-  width: 290,
-  height: 50,
-  backgroundColor: colors.primary,
-  borderRadius: 10,
-  flexDirection: "row",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginTop: 40
-},
+  LoginButton: {
+    width: 290,
+    height: 50,
+    backgroundColor: colors.primary,
+    borderRadius: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 40,
+  },
 
-loginError: {
-  marginBottom: 20,
-},
+  loginError: {
+    marginBottom: 20,
+  },
 
- // Navbar
- navBtnLogout: {
-  width: 100,
-  height: 30,
-  borderWidth: 1,
-  borderColor: colors.black,
-  borderRadius: 10,
-  alignItems: "center",
-  justifyContent: "center",
-  marginRight: 10,
-},
+  // Navbar
+  navBtnLogout: {
+    width: 100,
+    height: 30,
+    borderWidth: 1,
+    borderColor: colors.black,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+    marginRight: 10,
+  },
 
- //Movie Card
- movieCard: {
-  width: "100%",
-  backgroundColor: colors.mediumGray,
-  borderRadius: 5,
-  shadowColor: colors.black,
-  shadowOffset: {
+  //Movie Card
+  movieCard: {
+    width: "100%",
+    backgroundColor: colors.mediumGray,
+    borderRadius: 5,
+    shadowColor: colors.black,
+    shadowOffset: {
       width: 0,
       height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    paddingVertical: 25,
+    marginTop: 20,
   },
-  shadowOpacity: 0.25,
-  shadowRadius: 3.84,
-  paddingVertical: 25,
-  marginTop: 20,
-},
-movieImage: {
-  width: "100%",
-  height: 170,
-},
+  movieImage: {
+    width: "100%",
+    height: 170,
+  },
 
-movieDescriptionContainer: {
-  paddingTop: 10,
-  paddingBottom: 20,
-  paddingHorizontal: 15,
-},
+  movieDescriptionContainer: {
+    paddingTop: 10,
+    paddingBottom: 20,
+    paddingHorizontal: 15,
+  },
 
-//Catalog
+  //Catalog
 
-scrollContainer: {
-  backgroundColor: colors.darkGray,
-  padding: 10,
-},
+  scrollContainer: {
+    backgroundColor: colors.darkGray,
+    padding: 10,
+  },
 
- //Pagination
- paginationContainer: {
-  margin: 25,
-},
-paginationCoreContainer: {
-  flexDirection: "row",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-},
-paginationItem: {
-  width: 40,
-  height: 40,
-  backgroundColor: colors.mediumGray,
-  borderRadius: 50,
-  alignItems: "center",
-  justifyContent: "center",
-  marginRight: 10,
-},
+  //Pagination
+  paginationContainer: {
+    margin: 25,
+  },
+  paginationCoreContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  paginationItem: {
+    width: 40,
+    height: 40,
+    backgroundColor: colors.mediumGray,
+    borderRadius: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginRight: 10,
+  },
 
-//Details page
-detailsContainer: {
-  backgroundColor: colors.darkGray,
-},
-detailsCard: {
-  backgroundColor: colors.mediumGray,
-  borderRadius: 10,
-  padding: 20,
-  marginVertical: 20,
-  marginHorizontal: 10,
-  shadowColor: colors.black,
-  shadowOffset: {
+  //Details page
+  detailsContainer: {
+    backgroundColor: colors.darkGray,
+  },
+  detailsCard: {
+    backgroundColor: colors.mediumGray,
+    borderRadius: 10,
+    padding: 20,
+    marginVertical: 20,
+    marginHorizontal: 10,
+    shadowColor: colors.black,
+    shadowOffset: {
       width: 0,
       height: 2,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 3.84,
   },
-  shadowOpacity: 0.5,
-  shadowRadius: 3.84,
-},
-detailsImage: {
-  width: "100%",
-  height: 170,
-},
-detailsContent: {
-  marginTop: 15,
-},
-descriptionContainer: {
-  borderRadius: 10,
-  borderColor: colors.white,
-  borderWidth: 1,
-  padding: 10,
-  marginTop: 15,
-},
-formContainer: {
-  backgroundColor: colors.mediumGray,
-  borderRadius: 10,
-  padding: 20,
-  shadowColor: colors.black,
-  shadowOffset: {
+  detailsImage: {
+    width: "100%",
+    height: 170,
+  },
+  detailsContent: {
+    marginTop: 15,
+  },
+  descriptionContainer: {
+    borderRadius: 10,
+    borderColor: colors.white,
+    borderWidth: 1,
+    padding: 10,
+    marginTop: 15,
+  },
+  formContainer: {
+    backgroundColor: colors.mediumGray,
+    borderRadius: 10,
+    padding: 20,
+    shadowColor: colors.black,
+    shadowOffset: {
       width: 0,
       height: 2,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 3.84,
+    marginBottom: 20,
+    marginHorizontal: 10,
   },
-  shadowOpacity: 0.5,
-  shadowRadius: 3.84,
-  marginBottom: 20,
-  marginHorizontal: 10,
-},
-formInput: {
-  width: "100%",
-  height: 50,
-  borderWidth: 1,
-  borderColor: colors.mediumGray,
-  borderRadius: 5,
-  backgroundColor: colors.white,
-  marginBottom: 20,
-},
-formButton: {
-  backgroundColor: colors.primary,
-  width: "100%",
-  height: 50,
-  borderRadius: 5,
-  justifyContent: "center",
-  alignItems: "center",
-},
-reviewsContainer: {
-  backgroundColor: colors.mediumGray,
-  borderRadius: 10,
-  padding: 20,
-  shadowColor: colors.black,
-  shadowOffset: {
+  formInput: {
+    width: "100%",
+    height: 50,
+    borderWidth: 1,
+    borderColor: colors.mediumGray,
+    borderRadius: 5,
+    backgroundColor: colors.white,
+    marginBottom: 20,
+    paddingLeft: 20,
+  },
+  formButton: {
+    backgroundColor: colors.primary,
+    width: "100%",
+    height: 50,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  reviewsContainer: {
+    backgroundColor: colors.mediumGray,
+    borderRadius: 10,
+    padding: 20,
+    shadowColor: colors.black,
+    shadowOffset: {
       width: 0,
       height: 2,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 3.84,
+    marginBottom: 20,
+    marginHorizontal: 10,
   },
-  shadowOpacity: 0.5,
-  shadowRadius: 3.84,
-  marginBottom: 20,
-  marginHorizontal: 10,
-},
-reviewContainer: {
-  marginBottom: 15,
-},
-reviewNameContainer: {
-  flexDirection: "row",
-  alignItems: "center",
-},
-reviewImage: {
-  marginRight: 15,
-},
-reviewContent: {
-  borderRadius: 10,
-  borderColor: colors.white,
-  borderWidth: 1,
-  padding: 10,
-  marginTop: 10,
-},
+  reviewContainer: {
+    marginBottom: 15,
+  },
+  reviewNameContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  reviewImage: {
+    marginRight: 15,
+  },
+  reviewContent: {
+    borderRadius: 10,
+    borderColor: colors.white,
+    borderWidth: 1,
+    padding: 10,
+    marginTop: 10,
+  },
 
   //Search
   modalContainer: {
@@ -422,30 +415,28 @@ reviewContent: {
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 10,
-},
-modalContent: {
+  },
+  modalContent: {
     width: "100%",
     height: "60%",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 10,
     padding: 20,
-},
-modalItem: {
+  },
+  modalItem: {
     width: "100%",
     backgroundColor: colors.lightGray,
     padding: 10,
     marginVertical: 5,
     borderRadius: 10,
-},
-searchSelect: {
+  },
+  searchSelect: {
     width: "100%",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-end",
-},
-
-
+  },
 });
 
 export { colors, theme, text };
