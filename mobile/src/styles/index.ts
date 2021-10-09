@@ -104,6 +104,11 @@ buttonText: {
     marginLeft: 40,
 },
 
+loginErrorText: {
+  color: colors.primary,
+  fontSize: 20,
+},
+
  
 });
 
@@ -222,7 +227,10 @@ LoginButton: {
   justifyContent: "space-between",
   alignItems: "center",
   marginTop: 40
-  
+},
+
+loginError: {
+  marginBottom: 20,
 },
 
  // Navbar

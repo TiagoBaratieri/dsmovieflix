@@ -11,23 +11,35 @@ import { isAuthenticated, login } from "../services/auth";
 const Login: React.FC = () => {
   const navigation = useNavigation();
   const [hidePassword, setHidePassword] = useState(true);
+  const [userFetchData, setUserFetchData] = useState({});
+  const [hasError, setHasError] = useState(false);
   const [userInfo, setUserInfo] = useState({
     username: "",
     password: "",
   });
 
-  const [userFetchData, setUserFetchData] = useState({});
-
   async function handleLogin() {
-    const data = await login(userInfo);
-    setUserFetchData(userInfo);
-    await isAuthenticated() ? navigation.navigate("Catalog") : navigation.navigate("Home");
+    const data = await login(userInfo)
+      .then(() => {
+        setHasError(false);
+        setUserFetchData(userInfo);
+        navigation.navigate("Catalog");
+      })
+      .catch(() => {
+        navigation.navigate("Login");
+        setHasError(true);
+      });
   }
 
   return (
     <View style={theme.containerLogin}>
       <View style={theme.loginCard}>
         <Text style={text.loginTitle}>Login</Text>
+        {hasError && (
+          <View style={theme.loginError}>
+            <Text style={text.loginErrorText}>Usuário ou senha inválidos</Text>
+          </View>
+        )}
         <View style={theme.form}>
           <TextInput
             placeholder="Email"
