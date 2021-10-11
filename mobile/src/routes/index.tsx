@@ -10,7 +10,7 @@ const Routes: React.FC = () => {
   return (
     <Stack.Navigator
         screenOptions={{
-          headerTitle: ' ',
+          title: ' ',
           headerStyle: {
             backgroundColor: colors.primary, 
           },
