@@ -1,3 +1,5 @@
+# MovieFlix
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/TiagoBaratieri/dsmovieflix/blob/main/LICENSE) 
 
 <div align="center">
   <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-login.png" width="600" />
