@@ -1,5 +1,6 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import axios, { AxiosRequestConfig } from "axios";
+import axios from "axios";
+
 import { Review } from "../types/Movie";
 
 const baseUrl = "https://catalogmovieflix.herokuapp.com";

@@ -62,7 +62,7 @@ const MovieDetails: React.FC = ({
             <Image source={{ uri: movie?.imgUrl }} style={theme.detailsImage} />
             <View style={theme.detailsContent}>
               <Text style={text.movieTitle}>{movie?.title}</Text>
-              <Text style={text.movieSubtitle}>{movie?.subtitle}</Text>
+              <Text style={text.movieSubtitle}>{movie?.subTitle}</Text>
               <Text style={text.movieYear}>{movie?.year}</Text>
               <View style={theme.descriptionContainer}>
                 <Text style={text.detailsDescription}>{movie?.synopsis}</Text>

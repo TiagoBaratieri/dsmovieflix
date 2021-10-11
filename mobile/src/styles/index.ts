@@ -44,7 +44,6 @@ const text = StyleSheet.create({
   },
 
   //Navbar
-
   navText: {
     fontSize: 25,
     fontWeight: "bold",
@@ -52,6 +51,7 @@ const text = StyleSheet.create({
     marginLeft: 20,
   },
 
+ 
   navLogoutText: {
     fontWeight: "bold",
     fontSize: 14,

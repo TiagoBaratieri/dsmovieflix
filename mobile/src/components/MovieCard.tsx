@@ -19,8 +19,8 @@ const MovieCard: React.FC<Props> = ({ movie }) => {
     >
       <Image source={{ uri: movie.imgUrl }} style={theme.movieImage} />
       <View style={theme.movieDescriptionContainer}>
+        <Text style={text.movieSubtitle}>{movie.subTitle}</Text>
         <Text style={text.movieTitle}>{movie.title}</Text>
-        <Text style={text.movieSubtitle}>{movie.subtitle}</Text>
         <Text style={text.movieYear}>{movie.year}</Text>
       </View>
     </TouchableOpacity>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Modal, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { Modal, ScrollView, Text, TouchableOpacity, View, Image } from "react-native";
 import { getGenres } from "../services";
 import { theme } from "../styles";
 import { Genre } from "../types/Movie";
