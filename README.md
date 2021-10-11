@@ -1,9 +1,21 @@
 
 <div align="center">
-  <img src="https://github.com/TiagoBaratieri/images/blob/main/image-login.png" width="600" />
-  <img src="https://github.com/TiagoBaratieri/images/blob/main/image-movie-card.png" width="600" />
-  <img src="https://github.com/TiagoBaratieri/images/blob/main/image-movie.png" width="600" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-login.png" width="600" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-movie-card.png" width="600" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-movie.png" width="600" />
 </div>
+
+#Mobile
+
+<div align="center">
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/mobile-home.jpeg" width="200" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/mobile-page-login.jpeg" width="200" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/card-mobile.jpeg" width="200" />
+   <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/review.jpeg" width="200" />
+</div>
+
+
+
 
 # Sobre o Projeto
 MovieFlix é uma aplicação full stack web e mobile construída durante o **Bootcamp DevSuperior, evento organizado pela [DevSuperior](https://devsuperior.com.br "Site da DevSuperior").
@@ -21,7 +33,7 @@ Você pode acessar a aplicação com os usuários:
 <p>MEMBER -> email: ana@gmail.com | senha: 123456</p>
 
 ## Modelo Conceitual
-![Modelo Conceitual](https://github.com/Lukinhasssss/assets/blob/main/movieflix/modelo-conceitual.png)
+![Modelo Conceitual](https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/model.png)
 
 # Tecnologias utilizadas
 ## Backend
@@ -59,7 +71,7 @@ Pré-requisitos: npm / yarn
 # clonar repositório
 git clone https://github.com/TiagoBaratieri/dsmovieflix.git
 
-# entrar na pasta do projeto front end
+# entrar na pasta do projeto frontend
 cd frontweb
 
 # instalar dependências
@@ -67,7 +79,21 @@ yarn install
 
 # executar o projeto
 yarn start
+´´´
 
+## Mobile
+# clonar repositório
+https://github.com/TiagoBaratieri/dsmovieflix
+
+# entrar na pasta do projeto mobile
+cd mobile
+
+# instalar dependências
+yarn
+
+# executar o projeto
+  yarn start
+  
 
 # Autor
 
