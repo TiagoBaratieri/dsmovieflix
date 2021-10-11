@@ -52,21 +52,21 @@ Você pode acessar a aplicação com os usuários:
 
 # Como executar o projeto
 
-## Back end
+## Backend
 Pré-requisitos: Java 11
 
 ```bash
 # clonar repositório
 git clone https://github.com/TiagoBaratieri/dsmovieflix.git
 
-# entrar na pasta do projeto back end
+# entrar na pasta do projeto backend
 cd backend
 
 # executar o projeto
 ./mvnw spring-boot:run
 ```
 
-## Front end
+## Frontend
 Pré-requisitos: npm / yarn
 
 ```bash
@@ -83,19 +83,24 @@ yarn install
 yarn start
 ´´´
 
-## Mobile
-# clonar repositório
-https://github.com/TiagoBaratieri/dsmovieflix
+# Mobile
+```bash
+Pré-requisitos: yarn
 
-# entrar na pasta do projeto mobile
+
+# clonar repositório
+git clone https://github.com/TiagoBaratieri/dsmovieflix.git
+
+# entrar na pasta do projeto frontend
 cd mobile
 
 # instalar dependências
-yarn
+yarn install
 
 # executar o projeto
-  yarn start
-  
+yarn start
+Run on Android device/emulator
+´´´
 
 # Autor
 
