@@ -1,19 +1,28 @@
 # MovieFlix
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/TiagoBaratieri/dsmovieflix/blob/main/LICENSE) 
+[![GitHub Issues](https://img.shields.io/github/issues/TiagoBaratieri/dscatalog-bootcamp?style=for-the-badge)](https://github.com/TiagoBaratieri/dscatalog-bootcamp/issues)
+[![GitHub Forks](https://img.shields.io/github/forks/TiagoBaratieri/dscatalog-bootcamp?style=for-the-badge)](https://github.com/TiagoBaratieri/dscatalog-bootcamp/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/TiagoBaratieri/dscatalog-bootcamp?style=for-the-badge)](https://github.com/TiagoBaratieri/dscatalog-bootcamp/stargazers)
+[![GitHub License](https://img.shields.io/github/license/TiagoBaratieri/dscatalog-bootcamp?style=for-the-badge)](https://github.com/TiagoBaratieri/dscatalog-bootcamp/blob/main/LICENSE)
 
-<div align="center">
-  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-login.png" width="600" />
-  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-movie-card.png" width="600" />
-  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-movie.png" width="600" />
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-login.png" alt="Página inicial" style="width: 300px; max-width: 100%; height: auto;" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-movie-card.png" alt="Filmes" style="width: 300px; max-width: 100%; height: auto;" />
+   <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/image-movie.png" alt="Descrição filme" style="width: 300px; max-width: 100%; height: auto;" />
 </div>
-
 #Mobile
 
 <div align="center">
-  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/mobile-home.jpeg" width="200" />
-  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/mobile-page-login.jpeg" width="200" />
-  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/card-mobile.jpeg" width="200" />
-   <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/review.jpeg" width="200" />
+  <img src= width="200" />
+  <img src= width="200" />
+  <img src= width="200" />
+  <img src= width="200" />
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/mobile-home.jpeg" alt="Página inicial" style="width: 300px; max-width: 100%; height: auto;" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/mobile-page-login.jpeg" alt="Login" style="width: 300px; max-width: 100%; height: auto;" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/review.jpeg" alt="Descrição filme" style="width: 300px; max-width: 100%; height: auto;" />
+  <img src="https://github.com/TiagoBaratieri/dsmovieflix/blob/main/images/card-mobile.jpeg" alt="Filmes" style="width: 300px; max-width: 100%; height: auto;" />
 </div>
 
 
